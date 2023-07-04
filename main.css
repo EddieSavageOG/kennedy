@@ -64,3 +64,17 @@ h2 {
 a, a:visited, a:active{
       font-weight: bold;
 }
+
+.yes {
+      display: block;
+}
+
+.no {
+      display: none;
+}
+
+.biggie {
+      font-size: 2rem;
+      text-align: center;
+      
+}
