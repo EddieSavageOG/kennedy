@@ -25,10 +25,6 @@ body {
 }
 
 nav {
-
-}
-
-nav {
       text-align: right;
 }
 
@@ -61,20 +57,15 @@ h2 {
       text-align: center;
 }
 
-a, a:visited, a:active{
+a, a:visited, a:active {
       font-weight: bold;
-}
-
-.yes {
-      display: block;
-}
-
-.no {
-      display: none;
 }
 
 .biggie {
       font-size: 2rem;
       text-align: center;
-      
+}
+
+.flip {
+      display: none;
 }

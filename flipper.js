@@ -1,12 +1,18 @@
-let flipp = 1;
+flipping(); 
+
+function flipping () {
 let flippers = document.getElementsByClassName("flip");
-for (i = 0; i < flippers.length; i++) {
 
-      flippers[i].style.display = "none";
-      if ((i+1) >= flippers.length) {
-            i=0;
+for (let i = 0; i < flippers.length; i++) {
+      console.log("three")
+      if (flippers[i].style.display != "block") {
+            flippers[i].style.color = "red";
+            console.log("one")
+      }else{
+      flippers[i].style.display = "block";
+      console.log("yes")
       }
-      flippers[i+1].style.display = "block";
-      
 
+      setTimeout(function() {flipping()}, 5000);
 }
+};
