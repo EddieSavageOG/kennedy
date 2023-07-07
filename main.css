@@ -69,3 +69,15 @@ a, a:visited, a:active {
 .flip {
       display: none;
 }
+
+footer {
+      width: 100%;
+      padding-top: 4rem;
+}
+
+footer p {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 2rem;
+      font-style: italic;
+}
