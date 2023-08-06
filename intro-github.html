@@ -73,6 +73,50 @@
             <li>This commits my changes to my repository</li>
       </ol>
 
+      <h2>Connecting Your Repo to Github</h2>
+
+      <p>This part can be a little bit tricky to begin with and sometimes I still go in circles myself.</p>
+
+      <p>So, your directory on your computer is called a "repository." Your directory on Github (or any other directory instance) is also called a "repository." The words "local" and "remote" are used to designate access to different locations. "Local" means that the repository is on the machine you are physically accessing in person - you can physically touch it. A "remote" machine is a machine you are accessing via the internet or an intranet through a "local" machine. A "remote" machine is one that you are not currently able to physically touch.</p>
+
+      <p>To connect your local repository to a remote repository, you need to make sure you have initialized a git repository on your machine. To do this, in the directory you would like to use as your git repository, you use the command "git init".</p>
+
+      <p>Once you've done that, you will connect it to your remote repository on github, which means first, you need to create that remote repository on Github by visiting github and choosing the green "new" button.</p>
+
+      <img src="images/newrepo.PNG">
+
+      <p>Choose your options on the next screen. The only one that's required is the Repository Name field.</p>
+
+      <img src="images/repofields.PNG">
+
+      <p>You will now get a screen that gives you a list of commands to help you remember how to connect your local and remote repositories in case you forget - very helpful because I almost always forget this part.</p>
+
+      <img src="images/quickcommands.PNG">
+
+      <p>Now on your command line, you can type:</p>
+
+      <ol>
+            <li>git remote add origin URL</li>
+            <li>git branch -M main</li>
+            <li>git remote -v</li>
+            <li>git add .</li>
+            <li>git status</li>
+            <li>git commit -m "helpful comment for yourself goes here"</li>
+            <li>git push</li>
+      </ol>
+
+      <p>The function of these commands is:</p>
+
+      <ol>
+            <li>Connect your local and remote repositories together</li>
+            <li>Connect your local and remote branches together</li>
+            <li>Verify that your repositores are connected properly</li>
+            <li>Add all changes to your queue</li>
+            <li>Verify that your queue is correct</li>
+            <li>Commit the changes to your queue with a helpful comment to yourself about what the changes are about</li>
+            <li>Push those changes to the remote repository</li>
+      </ol>
+
       <h2>This concludes our brief overview of Git. This document is on github, so from here, you can explore this repo itself to see what I'm talking about. Let me know what questions you have because this is absolutely NOT a complete explanation!</h2>
 
 
