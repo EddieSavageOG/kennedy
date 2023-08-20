@@ -37,10 +37,43 @@ nav ul li {
       margin: 0 3rem;
 }
 
+nav ul li:hover, nav ul li:active {
+      border-bottom: 3px solid purple;
+}
+
 nav ul li a {
       color: #4E3D42;
       text-decoration: none;
 }
+
+.git-drop1, .git-drop2 {
+      font-weight:bold;
+}
+
+.git-down1, .git-down2 {
+      display:none;
+      position: absolute;
+      z-index: 1;
+      top: 2.5rem;
+      background-color: #fff;
+      max-width: 15rem;
+      padding: 1rem 1rem;
+      text-align: center;
+}
+
+.git-down1 li, .git-down2 li {
+      margin: 0;
+}
+
+.git-drop2:hover .git-down2 {
+      display:block;
+}
+
+.git-drop1:hover .git-down1 {
+      display: block;
+}
+
+
 main {
       width: 80%;
       margin: 0 10%;
