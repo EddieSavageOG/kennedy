@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Slider Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <h1>Simple Slider</h1>
+      <p>Here is an example of a very simple slider. There are 6 autumn themed images and you can use the "Previous" and "Next" buttons to navigate from the first image to the last one. At the last image if you select the "Next" button, it'll take you back to the beginning. It does not automatically take you through them, you must manually click through.</p>
+    <div id="slider-container">
+        <div id="slider-wrapper">
+            <div class="slide slide1"><img src="images/jeremy-thomas-O6N9RV2rzX8-unsplash.jpg"></div>
+            <div class="slide slide2"><img src="images/johannes-plenio-EOIToTneyZ4-unsplash.jpg"></div>
+            <div class="slide slide3"><img src="images/timothy-eberly-yuiJO6bvHi4-unsplash.jpg"></div>
+            <div class="slide slide4"><img src="images/karolina-badzmierowska-KW3kWikn5cI-unsplash.jpg"></div>
+            <div class="slide slide5"><img src="images/katie-moum-DLNoV-SFQ-U-unsplash.jpg"></div>
+            <div class="slide slide6"><img src="images/jeffrey-hamilton-rFHLygdI7z0-unsplash.jpg"></div>
+    </div>
+    <div class="controls">
+      <button onclick="prevSlide()">Previous</button>
+      <button onclick="nextSlide()">Next</button>
+    </div>
+
+    <script src="slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/* start main CSS */
+
+body {
+    width: 50%;
+    margin: 0 25%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#slider-container {
+      overflow: hidden;
+  }
+
+  #slider-wrapper {
+      display: flex;
+      transition: all 0.3s;
+  }
+  .slide {
+      min-width: 300px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .slide img {
+    object-fit: contain;
+    max-width: 100%;
+  }
+  .slide1 { background-color: red; }
+  .slide2 { background-color: green; }
+  .slide3 { background-color: blue; }
+  .slide4 { background-color: purple; }
+  .slide5 { background-color: pink; }
+  .slide6 { background-color: orange; }
+
+  .controls {
+    display: flex;
+    justify-content: space-between;
+  }
