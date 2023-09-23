@@ -117,7 +117,7 @@ a, a:visited, a:active {
       display: inline-block;
 }
 
-.flip {
+.flip, .more {
       display: none;
 }
 

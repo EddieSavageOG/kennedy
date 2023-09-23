@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+	<title>Read More - Read Less</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />        
+	<!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+	<link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+<header>
+      <nav>
+            <ul>
+                  <li class="git-drop1">Github Links
+                              <ul class="git-down1">
+                                    <li><a href = "https://github.com/EddieSavageOG" target="_blank">EddieSavageOG GitHub</a></li>
+                                    <li><a href ="https://github.com/Obinna-1234" target="_blank">Obinna-1234 Github</a></li>
+                              </ul>
+                  </li>
+                  <li class="git-drop1">Feedback
+                              <ul class="git-down1">
+                                    <li><a href = "codeliber.html" target="_blank">Codeliber</a></li>
+                              </ul>
+                  </li> 
+                  <li class="git-drop1">Tutorials
+                        <ul class ="git-down1">
+                              <li><a href="firefox.html">Why Firefox</a></li>                  <li><a href="inspect.html">The Inspect Tool</a></li>
+                              <li><a href="Sliders/index.html">Sliders</a></li>
+                              <li><a href="overlay.html">Overlays</a></li>
+                              <li><a href="readmore.html">Read More</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="intro-github.html">Home - Github</a></li>
+            </ul>
+      </nav>
+
+
+</header>
+<main>
+
+      <div>
+            <h1>Read More/Read Less</h1>
+      
+            <p>Here is some texty text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet consequatur excepturi voluptas dolorum enim maxime deleniti labore blanditiis est nostrum iure soluta deserunt quasi sapiente dolorem, suscipit sit aliquid quod!</p>
+      
+            <p>And some more Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore nulla tempore eveniet deleniti, maiores soluta ipsa omnis amet labore accusamus dolor iusto, ullam, animi minima. Quia minus perspiciatis dicta consequatur.</p>
+      
+            <p class="toggle" onClick="readMore()">read more</p>
+      
+            <p class = "more">So the way we make this one work is - first, we set these hidden paragraphs with the class name "more" which is set in our CSS to display: none.</p>
+      
+            <p class="more">We also gave our paragraph above that says "read more" the class "toggle" (we could use an ID here since it's unique on this page AND we want to make sure that when it's clicked, no other "read more" buttons get triggered, so it would be a good idea to use a unique ID here instead of a class but I didn't).</p>
+
+            <p class="more">In our JavaScript, we collected all our elements with the class "toggle" into the variable togg (just one) and then we collected all our elements with the class "more" into an array called "mores" (there are several).</p>
+
+            <p class="more">I've also given the "read more" paragraph an "onClick" event that calls the JavaScript "readMore" function.</p>
+
+            <p class="more">Because I want this button to be a "read more" button that then turns into a "read less" button, the first thing our function does is check to see what the .innerText of the paragraph says. if it says "read more" then I use a for loop to iterate through the mores array and change the display from none to block and I change the innerText of the "toggle" paragraph to "read less."</p> 
+                  
+            <p class="more">Otherwise (else), I use a for loop to iterate through the mores array and change all their displays to "none" and I change the innerText of the "toggle" paragraph to "read more."</p>
+
+            <p class="more">I'm sure there are other ways to do this, but this is the way I did it.</p>
+      </div>
+      
+
+
+</main>
+<footer>
+      <p>There should be a proper footer down here but I'm feeling IMMENSELY uncreative at the moment.</p>
+</footer>
+</body>
+<script src="readmore.js"></script>
+</html>
