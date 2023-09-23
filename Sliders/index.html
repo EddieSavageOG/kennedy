@@ -48,6 +48,34 @@
       <button onclick="nextSlide()">Next</button>
     </div>
 
+    <h2>The Logic</h2>
+
+    <p>So, first of all, you can obviously visit the repo and read the code and see exactly how it works - that's how you got here, after all. :D And I DO absolutely recommend that you do that!</p>
+
+    <p>But let's walk through the logic, too.</p>
+
+    <p>So, the first thing we do is create a variable called "currentSlide" and we set that to 0. Then we create an array called "slides" and we collect all the elements with the class "slides."</p>
+
+    <p>Then we create another element called sliderWrapper that would be array if we had more than one element with the ID "slider-wrapper."</p>
+
+    <p>We then have a function called "updateSlidePosition" that defines a variable called offset, which is equal to the -currentSlide * 300 (and I've got a comment here to remind Future Me that each slide has a defined width of 300px because I know that's something I will forget).</p>
+
+    <p>The next line is a little tricky, so we're going to break it down.</p>
+
+    <p>"sliderWrapper" refers to the variable we created earlier by finding all the HTML elements with the ID "slider-wrapper." We're using ".style" to access their CSS properties. We're using .transform to implement the CSS <a href="https://www.w3schools.com/cssref/css3_pr_transform.php">transform property</a> and defining that property as "translateX(${offset}px)".</p>
+    
+    <p>This is fun, too, because ${offset} is a JavaScript template literal that we just defined as -currentSlide * 300. So we're inserting that number into a standard CSS function that usually looks more like translateX().</p>
+
+    <p>So we're using that to move our slide to the left.</p>
+
+    <p>We have two functions, too. One is called "nextSlide" and the other is "prevSlide". Next slide checks to see if the current slide number is less than the entire length of the slides array, and if it is, it advances to the next slide (moves the slides to the left) otherwise, it resets the slides back to the beginning and then updates calls "updateSlidePosition."</p>
+
+    <p>prevSlide checks to see if the currentSlide is greater than 0 and if it is, lowers the count (moves the slides to the right). If it's already 0, it sends the slides to the end (slides.length -1, because arrays start at 0, so the last slides will have be in the array position 1 less than the length of the array). It will also call updateSlidePosition afterward.</p>
+
+    <p>And there you have it! A basic slider!</p>
+
+    <p>And a slider is different from a carousel in that it goes from one end to the other. A carousel goes around and around smoothly without a start or a stop and usually advances automatically, where as a slider is typically manual.</p>
+
     <script src="slider.js"></script>
   </main>
 </body>
