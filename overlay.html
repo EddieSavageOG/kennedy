@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+	<title>Overlays</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />        
+	<!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+	<link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+<header>
+      <nav>
+            <ul>
+                  <li class="git-drop1">Github Links
+                              <ul class="git-down1">
+                                    <li><a href = "https://github.com/EddieSavageOG" target="_blank">EddieSavageOG GitHub</a></li>
+                                    <li><a href ="https://github.com/Obinna-1234" target="_blank">Obinna-1234 Github</a></li>
+                              </ul>
+                  </li>
+                  <li class="git-drop1">Feedback
+                              <ul class="git-down1">
+                                    <li><a href = "codeliber.html" target="_blank">Codeliber</a></li>
+                              </ul>
+                  </li> 
+                  <li class="git-drop1">Tutorials
+                              <ul class ="git-down1">
+                                    <li><a href="firefox.html">Why Firefox</a></li>                  <li><a href="inspect.html">The Inspect Tool</a></li>
+                                    <li><a href="Sliders/index.html">Sliders</a></li>
+                                    <li><a href="overlay.html">Overlays</a></li>
+                              </ul>
+                  </li>
+                  <li><a href="intro-github.html">Home - Github</a></li>
+            </ul>
+      </nav>
+
+
+</header>
+<div class="overlay">
+      <img src="/sliders/images/jeremy-thomas-O6N9RV2rzX8-unsplash.jpg">
+</div>
+
+<h2>Creating an Overlay on Top of an Image</h2>
+
+<p>The overlay above uses the <a href="https://www.w3schools.com/cssref/sel_before.php">::before selector</a> to style a white overlay on top of the image.</p>
+
+<p>To get this effect, I need to put my image inside a div (well, I don't NEED to, but it makes life easier if I do) and I've used assigned the class name "overlay" to that div.</p>
+
+<p>I styled my image simply by assigning it a fixed pixel width (because overlays are finicky). You can use rems or percentages, but it was making me to do too much math so I went with pixels. Normally, I'd stick to rems or percentages because that makes my sites naturally responsive but I'm being lazy today, so it's pixels. :D</p>
+
+<p>I've assigned text-align: center to my div to center my image AND my overlay.</p>
+
+<p>The overlay itself is the MOST styled element on this page (outside the navigation of course). The styling looks like this:</p>
+
+<pre><code>
+      .overlay::before {
+            background-color: #fff;
+            opacity: .5;
+            content: "";
+            z-index: 1;
+            position:absolute;
+            width: 750px;
+            height: 500px;
+            display: inline-block;
+      }
+</code></pre>
+
+<p>The content property is necessary to make before renderable, otherwise it has no content and won't exist. The z-index is necessary to make sure the overlay is on top of the image. The position is set to absolute so that the overlay can be positioned on top of the image. The width and height are set to the same width and height as the image so that the overlay covers the image. The display is set to inline-block so that the overlay is rendered as a block element. And position is set to absolute to take it out of the normal flow of standard rendering. Otherwise it wants to render as a block element and pushes the image down below it.</p>
+
+<p>And there you have it! How to use ::before to create an overlay. You can apply this to text overlays, too, if you want, by adding actual words to the content property and removing the background color (or keeping it - your choice!).</p>
+
+<footer>
+      <p>There should be a proper footer down here but I'm feeling IMMENSELY uncreative at the moment.</p>
+</footer>
+</body>
+
+</html>

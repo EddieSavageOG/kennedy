@@ -1,5 +1,5 @@
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
+let currentSlide = 0; // 0 is the first slide
+const slides = document.querySelectorAll('.slide'); // select all elements with class slide
 const sliderWrapper = document.getElementById('slider-wrapper');
 
 function nextSlide() {
