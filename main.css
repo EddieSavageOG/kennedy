@@ -132,3 +132,11 @@ footer p {
       font-size: 2rem;
       font-style: italic;
 }
+
+.techcrunch ol img {
+      width: 80%;
+}
+
+.techcrunch li {
+      margin: 1rem 0;
+}
