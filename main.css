@@ -24,6 +24,8 @@ body {
       background-color: #C9D5B5;
 }
 
+/* navigation */
+
 nav {
       text-align: right;
 }
@@ -72,6 +74,7 @@ nav ul li a {
       text-align: left;
 }
 
+/* main styles */
 
 main {
       width: 80%;
@@ -98,6 +101,8 @@ a, a:visited, a:active {
       text-align: center;
 }
 
+/* Overlay styles */
+
 .overlay img {
       width: 750px;
 }
@@ -117,9 +122,13 @@ a, a:visited, a:active {
       display: inline-block;
 }
 
+/* readmore and flip */
+
 .flip, .more {
       display: none;
 }
+
+/* Footer  */
 
 footer {
       width: 100%;
@@ -132,6 +141,8 @@ footer p {
       font-size: 2rem;
       font-style: italic;
 }
+
+/* TechCrunch Feedback Page */
 
 .techcrunch ol img {
       width: 80%;
